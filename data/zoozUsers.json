@@ -1,0 +1,45 @@
+{
+	"type":"FeatureCollection",
+	"bbox": [
+		33.78, 29.30,
+		36.16, 33.49
+	],
+	"features":[
+		{
+			"type":"Feature",
+			"id":"user_1",
+			"geometry":{
+				"type":"Point",
+				"coordinates":[34.76, 31.98]
+			},
+			"geometry_name":"origin_geom",
+			"properties":{
+				"publicid":"1"
+			}
+		},
+		{
+			"type":"Feature",
+			"id":"user_1",
+			"geometry":{
+				"type":"Point",
+				"coordinates":[34.7531, 32.0511]
+			},
+			"geometry_name":"origin_geom",
+			"properties":{
+				"publicid":"1"
+			}
+		},
+		{
+			"type":"Feature",
+			"id":"user_1",
+			"geometry":{
+				"type":"Point",
+				"coordinates":[34.7752, 32.0711]
+			},
+			"geometry_name":"origin_geom",
+			"properties":{
+				"publicid":"1"
+			}
+		}
+	]
+}
