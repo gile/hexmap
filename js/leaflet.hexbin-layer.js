@@ -93,11 +93,14 @@ L.HexLayer = L.Class.extend({
 
     _createHexagons: function (container) {
         var layout = this._layout,
-            data = this._data.features.map(function (d) {
-                return this._project(d.geometry.coordinates);
-            }, this),
-            bins = layout(data),
-            hexagons = container.selectAll(".hexagon").data(bins);
+                data = this._data.features.map(function (d) {
+                    return {
+                        coordinates: this._project(d.geometry.coordinates),
+                        value: d.properties.value
+                    };
+                }, this),
+                bins = layout(data),
+                hexagons = container.selectAll(".hexagon").data(bins);
 
         // Create hexagon elements when data is added.
         var path = hexagons.enter().append("path").attr("class", "hexagon");

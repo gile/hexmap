@@ -1,12 +1,50 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	height: 100%; 
+}
+
+..container {
+	position: relative;
+}
+
+#users { 
+	width: 500px; 
+	height: 600px; 
+	margin: 30px auto; 
+}
+
+.hexagon { 
+	opacity: 0.7
+}
+
+.legend_container {
+	position: absolute;
+	top: 100;
+	left: 50%;
+	width: 500px; 
+	height: 200px; 
+	margin: 0 auto; 
+	z-index: 10;
+}
+
+svg.legend {
+	font: 10px sans-serif;	
+}
+
+.legend_segment {
+	opacity: 0.7;
+}
+
 .caption {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .key path {
-  display: none;
+	display: none;
 }
 
 .key line {
-  stroke: #000;
-  shape-rendering: crispEdges;
+	stroke: #000;
+	shape-rendering: crispEdges;
 }
